@@ -4,8 +4,11 @@
 
 // Rule of 3
 struct String {
-  char * cstr;
-  size_t len;
+  char * cstr{};
+  size_t len{};
+
+  // default ctor
+  String() = default;
 
   // ctor
   String(const char * str) {
